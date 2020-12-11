@@ -9,6 +9,11 @@ import UIKit
 
 class EmojiTableViewController: UITableViewController {
 
+    let objects = [
+    EmojiStruct(emoji: "🖥", name: "macDovolen", description: "ochen dovolen", isFavorite: false),
+    EmojiStruct(emoji: "🇫🇮", name: "Suomi", description: "Best country ever", isFavorite: false),
+    EmojiStruct(emoji: "🧐", name: "Thinking", description: "and thinking", isFavorite: false)
+    ]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,30 +21,35 @@ class EmojiTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.title = "EmojiList"
+        self.navigationItem.leftBarButtonItem = editButtonItem.self
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
+        // 1 section
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return objects.count
+        // we have count of rows equals to count of objects in objects[]
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "emojiCell", for: indexPath) as? EmoTableViewCell
+        let object = objects[indexPath.row]
+        //cell?.nameLab.text = objectInTable.name
+        //cell?.emojiLab.text = objectInTable.emoji
+        //cell?.descriptionLab.text = objectInTable.description
+        cell?.set(objectInTable: object)
+        return cell!
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
