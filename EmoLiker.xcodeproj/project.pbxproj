@@ -36,6 +36,7 @@
 		B582907F257ECC9A003D3942 /* EmoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoTableViewCell.swift; sourceTree = "<group>"; };
 		B5829082257ED4AA003D3942 /* emoModul.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emoModul.swift; sourceTree = "<group>"; };
 		B5DACEEE258DE066007098E5 /* protocolExtenstion.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = protocolExtenstion.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B5DACEF0258EF24B007098E5 /* optional.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = optional.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B5DDBCBA258C934E00E0B9D4 /* classesInher.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = classesInher.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -85,6 +86,7 @@
 				B54068BE257A46DC000A93B8 /* EmoLiker.xcdatamodeld */,
 				B5DDBCBA258C934E00E0B9D4 /* classesInher.playground */,
 				B5DACEEE258DE066007098E5 /* protocolExtenstion.playground */,
+				B5DACEF0258EF24B007098E5 /* optional.playground */,
 			);
 			path = EmoLiker;
 			sourceTree = "<group>";
